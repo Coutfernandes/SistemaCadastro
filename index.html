@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrega de Atividades</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <p>I'm hosted with GitHub Pages.</p>
+  <div class="container">
+    <h1>Cadastro de Aluno</h1>
+    <form id="cadastroAlunoForm">
+      <label for="nomeAluno">Nome do Aluno:</label>
+      <input type="text" id="nomeAluno" name="nomeAluno" required />
+
+      <label for="emailAluno">Email:</label>
+      <input type="email" id="emailAluno" name="emailAluno" required />
+
+      <button type="submit">Cadastrar Aluno</button>
+    </form>
+
+    <hr />
+
+    <h1>Enviar Atividade</h1>
+    <form id="envioAtividadeForm">
+      <label for="alunoSelect">Aluno:</label>
+      <select id="alunoSelect" name="alunoSelect" required>
+        <option value="">Selecione um aluno</option>
+      </select>
+
+      <label for="tituloAtividade">Título da Atividade:</label>
+      <input type="text" id="tituloAtividade" name="tituloAtividade" required />
+
+      <label for="descricaoAtividade">Descrição:</label>
+      <textarea id="descricaoAtividade" name="descricaoAtividade" rows="4" required></textarea>
+
+      <button type="submit">Enviar Atividade</button>
+    </form>
+
+    <hr />
+
+    <h2>Atividades Enviadas</h2>
+    <ul id="listaAtividades"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
